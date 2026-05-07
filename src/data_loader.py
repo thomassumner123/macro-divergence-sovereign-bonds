@@ -136,6 +136,14 @@ def load_boe_inflation():
     """
     return _load("boe_inflation_daily.csv")
 
+def load_boe_rate():
+    """
+    BoE Official Bank Rate from BoE Statistical Database.
+    Monthly frequency — forward filled from rate change dates.
+    Column: UK_BANK_RATE.
+    """
+    return _load("boe_rate_monthly.csv")
+
 
 # ---------------------------------------------------------------
 # ONS Series
